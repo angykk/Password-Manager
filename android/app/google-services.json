@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426640441055",
+    "project_id": "pass-angy-manager",
+    "storage_bucket": "pass-angy-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426640441055:android:4d500c6ed0d0737b58336a",
+        "android_client_info": {
+          "package_name": "com.example.password_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB-NonX9-8sSxD4ZAxAAHlbjky5AQiQ0s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
