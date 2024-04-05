@@ -14,7 +14,6 @@ class PasswordPage extends StatefulWidget {
 class _PasswordPage extends State<PasswordPage> {
   List<PasswordWidget> passwordWidgets = [];
   String docID = '';
-  static bool reload = false;
 
   @override
   void initState() {
