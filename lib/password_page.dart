@@ -27,7 +27,6 @@ class _PasswordPage extends State<PasswordPage> {
     DocumentReference documentRef =
         FirebaseFirestore.instance.collection('users').doc(docID);
     QuerySnapshot subSnapshot = await documentRef.collection('passwords').get();
-
     if (subSnapshot.docs.isNotEmpty) {
       for (QueryDocumentSnapshot documentSnapshot in subSnapshot.docs) {
         // Access document fields here
@@ -36,7 +35,7 @@ class _PasswordPage extends State<PasswordPage> {
           website: documentSnapshot['website'],
           url: documentSnapshot['url'],
           username: documentSnapshot['username'],
-        )); //adds to list
+        ));
         setState(() {});
       }
     }

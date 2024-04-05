@@ -108,7 +108,9 @@ class RegisterPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => PasswordPage(docID: id)),
+                            builder: (context) => PasswordPage(
+                                  docID: id,
+                                )),
                       );
                     } on FirebaseAuthException catch (e) {
                       if (e.code == 'weak-password') {
