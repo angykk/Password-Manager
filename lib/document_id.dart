@@ -5,9 +5,9 @@ class DocumentID extends InheritedWidget {
   late String docID;
 
   DocumentID({
-    Key? key,
-    required Widget child,
-  }) : super(key: key, child: child);
+    super.key,
+    required super.child,
+  });
 
   @override
   bool updateShouldNotify(DocumentID oldWidget) {

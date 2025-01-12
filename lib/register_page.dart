@@ -79,7 +79,7 @@ class RegisterPage extends StatelessWidget {
             SizedBox(height: MediaQuery.of(context).size.height * 0.02),
             ElevatedButton(
                 style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
+                    backgroundColor: WidgetStateProperty.all<Color>(
                         const Color.fromARGB(255, 255, 151, 151))),
                 onPressed: () async {
                   if (_password.text == _password2.text) {
@@ -103,7 +103,7 @@ class RegisterPage extends StatelessWidget {
                         //adds user document
                         DocumentID.of(context).docID = doc.id.toString();
                         id = doc.id.toString();
-                        print('register ' + DocumentID.of(context).docID);
+                        print('register ${DocumentID.of(context).docID}');
                       });
                       Navigator.push(
                         context,
@@ -156,7 +156,6 @@ class RegisterPage extends StatelessWidget {
                           );
                         });
                   }
-                  ;
                 },
                 child: const Text(
                   "Create Account",

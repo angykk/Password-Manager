@@ -9,7 +9,7 @@ class PasswordWidget extends StatefulWidget {
   final String password;
   final String username;
   final String url;
-  PasswordWidget({
+  const PasswordWidget({super.key, 
     required this.url,
     required this.website,
     required this.username,
@@ -39,8 +39,9 @@ class _PasswordWidget extends State<PasswordWidget> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
-    TextEditingController _password =
+    TextEditingController password =
         TextEditingController(text: widget.password);
     return Center(
       child: Container(
@@ -138,7 +139,7 @@ class _PasswordWidget extends State<PasswordWidget> {
                       )),
                   readOnly: true,
                   obscureText: _obscureText,
-                  controller: _password,
+                  controller: password,
                   style: const TextStyle(
                       fontSize: 18,
                       color: Color.fromARGB(255, 255, 243, 218),

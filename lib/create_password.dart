@@ -42,7 +42,7 @@ class CreatePassword extends StatelessWidget {
               style:
                   TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
         ),
-        body: Column(
+        body: ListView(
           children: [
             Container(
                 margin: EdgeInsets.symmetric(
@@ -199,9 +199,9 @@ class CreatePassword extends StatelessWidget {
                 Navigator.pop(context, a); //returns to password page
               },
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all<Color>(
+                backgroundColor: WidgetStateProperty.all<Color>(
                     const Color.fromARGB(255, 255, 151, 151)),
-                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
                 ),
